@@ -3,8 +3,12 @@ var NavBar = React.createClass({
     return (
       <nav className="navbar navbar-inverse navbar-fixed-top">
         <div className="logo-container">
-          <img src="images/death-star.png" className="logo"/>
-          <p className="brand-name">Movies</p>
+          <a href="#">
+            <img src="images/death-star.png" className="logo"/>
+          </a>
+          <a href="#">
+            <p className="brand-name">Movies</p>
+          </a>
         </div>
       </nav>
     );

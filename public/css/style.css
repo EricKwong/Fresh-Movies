@@ -1,3 +1,7 @@
+body {
+  background-color: rgb(230,230,230);
+}
+
 .navbar {
   background-color: slategrey;
   height: 80px;
@@ -23,7 +27,7 @@
 }
 
 .container-fluid {
-  padding: 90px 120px;
+  padding: 90px 120px 0 120px;
 }
 
 .category {
@@ -33,7 +37,6 @@
 }
 
 .movie-container {
-  padding: 0 20px 15px 20px;
   margin: 0 auto;
   width: auto;
 }
@@ -45,6 +48,62 @@
 .movie-image {
   margin: 0;
   box-shadow: 2px 1px 2px 3px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.movie-image:hover {
+  opacity: 0.6;
+}
+
+.first a, .last a {
+  color: turquoise !important;
+}
+
+.page-link {
+  cursor: pointer;
+  background-color: rgb(230,230,230) !important;
+  border-color: rgb(200,200,200) !important;
+}
+
+#modal-container {
+}
+
+.modal-background-image {
+  position: absolute;
+  width: 102%;
+  height: 102%;
+  background-size: cover;
+  -webkit-filter: blur(20px);
+}
+
+.modal-dim {
+  position: absolute;
+  width: 102%;
+  height: 102%;
+  background-color: rgba(0,0,0,0.5);
+}
+
+a.active {
+  color: turquoise !important;
+}
+
+@media(min-width:768px){
+  .logo {
+    margin-left: 30px;
+  }
+
+  .brand-name {
+    margin: 10px 0 0 90px;
+  }  
+
+  .movie-image {
+    height: 500px;
+  }
+
+  /*.movie-modal {
+    padding: 5%;
+    margin: 5%;
+  }*/
 }
 
 @media(max-width:767px){
@@ -55,16 +114,11 @@
   .brand-name {
     margin: 10px 0 0 60px;
   }
-}
 
-@media(min-width:768px){
-  .logo {
-    margin-left: 30px;
-  }
-
-  .brand-name {
-    margin: 10px 0 0 90px;
-  }
+  /*.movie-modal {
+    padding: 5%;
+    margin: 10% 0;
+  }*/
 }
 
 @media(min-width:992px){
@@ -75,6 +129,15 @@
   .brand-name {
     margin: 10px 0 0 90px;
   }
+
+  .movie-image {
+    height: 290px;
+    width: 200px;
+  }
+
+  /*.movie-modal {
+    padding: 10%;
+  }*/
 }
 
 @media(min-width:1200px){
@@ -92,8 +155,21 @@
     color: white;
   }
 
-  .movie-image {
-    height: 240px;
+  .category {
+    margin-left: 7%;
   }
+
+  .movie-image {
+    height: 270px;
+    width: 180px;
+  }
+
+  .movie-list {
+    padding-left: 7%;
+  }
+
+/*  .movie-modal {
+    padding: 10%;
+  }*/
 }
 
