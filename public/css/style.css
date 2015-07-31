@@ -1,5 +1,24 @@
+@import url(http://fonts.googleapis.com/css?family=Lato);
+
+html > * {
+  font-family: 'Lato';
+  height: 100%;
+}
+
 body {
   background-color: rgb(230,230,230);
+  height: 100%;
+}
+
+.vertical-line {
+  border-left: 1px solid rgba(255,255,255,0.3);
+  display: inline;
+  margin: 0 10px;
+}
+
+.horizontal-rule {
+  color: white;
+  opacity: 0.3;
 }
 
 .navbar {
@@ -65,7 +84,20 @@ body {
   border-color: rgb(200,200,200) !important;
 }
 
-#modal-container {
+.movie-modal {
+  cursor: pointer;
+}
+
+.movie-modal-content {
+  color: white;
+}
+
+.movie-details-container {
+  margin: 0 10%;
+}
+
+.movie-details {
+  display: inline;
 }
 
 .modal-background-image {
@@ -74,6 +106,7 @@ body {
   height: 102%;
   background-size: cover;
   -webkit-filter: blur(20px);
+  float: none !important;
 }
 
 .modal-dim {
@@ -83,12 +116,24 @@ body {
   background-color: rgba(0,0,0,0.5);
 }
 
+.modal-back:hover {
+  opacity: 1;
+}
+
+.modal-movie-title {
+  font-size: 4em;
+}
+
 .pagination {
   padding: 0 3%;
 }
 
 a.active {
   color: turquoise !important;
+}
+
+.movie-modal-content {
+  padding: 14%;
 }
 
 @media(min-width:768px){
@@ -103,12 +148,7 @@ a.active {
   .movie-image {
     height: 500px;
   }
-
-  /*.movie-modal {
-    padding: 5%;
-    margin: 5%;
-  }*/
-}
+} 
 
 @media(max-width:767px){
   .logo {
@@ -118,11 +158,6 @@ a.active {
   .brand-name {
     margin: 10px 0 0 60px;
   }
-
-  /*.movie-modal {
-    padding: 5%;
-    margin: 10% 0;
-  }*/
 }
 
 @media(min-width:992px){
@@ -138,10 +173,6 @@ a.active {
     height: 290px;
     width: 200px;
   }
-
-  /*.movie-modal {
-    padding: 10%;
-  }*/
 }
 
 @media(min-width:1200px){
@@ -172,8 +203,5 @@ a.active {
     padding-left: 7%;
   }
 
-/*  .movie-modal {
-    padding: 10%;
-  }*/
 }
 
