@@ -101,18 +101,19 @@ body {
 }
 
 .modal-background-image {
-  position: absolute;
+  position: fixed;
   width: 102%;
-  height: 102%;
+  min-height: 100%;
   background-size: cover;
+  background-repeat: no-repeat;
   -webkit-filter: blur(20px);
   float: none !important;
 }
 
 .modal-dim {
-  position: absolute;
+  position: fixed;
   width: 102%;
-  height: 102%;
+  min-height: 102%;
   background-color: rgba(0,0,0,0.5);
 }
 
@@ -147,6 +148,10 @@ a.active {
 
   .movie-image {
     height: 500px;
+  }
+
+  .movie-modal-image {
+    margin-bottom: 40px !important;
   }
 } 
 

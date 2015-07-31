@@ -32,8 +32,9 @@ var MovieModal = React.createClass({
       <div className="movie-modal" onClick={this.props.modalClose}>
         <div className="modal-background-image" style={style}/>
         <div className="modal-dim"/>
+        <h2 className="modal-back" onClick={this.props.modalClose}>{"< Back to list"}</h2>
         <div className="movie-modal-content pagination-center">
-          <img className="col-lg-3 col-md-6 col-sm-10 movie-modal-image" src={posterPath}/>
+          <img className="col-lg-3 col-md-6 col-sm-12 movie-modal-image" src={posterPath}/>
           <div className="movie-details-container col-lg-6">
             <h1 className="movie-title">{movieData.title} ({movieData.release_date.substr(0,4)})</h1>
             <h3 className="movie-score movie-details">Score: {movieData.vote_average}</h3>
