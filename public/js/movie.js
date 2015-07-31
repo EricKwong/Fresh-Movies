@@ -17,7 +17,7 @@ var Movie = React.createClass({
     }
 
     return (
-      <div onClick={this.movieClicked} className="col-lg-2 col-xs-6 movie-container">
+      <div onClick={this.movieClicked} className="col-lg-2 col-md-4 col-xs-6 movie-container">
         <div className="movie">
           <img className="movie-image img-responsive" src={posterPath}/> 
         </div> 
